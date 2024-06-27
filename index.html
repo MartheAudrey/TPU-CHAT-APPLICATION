@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Applicattion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Sidebar design-->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="assets/mingcute_chat-4-fill.png" alt="The application logo">
+            <img src="assets/Chatties.png" alt="">
+        </div>
+        <!--Search bar-->
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Search messages, people">
+            </form>
+            <img src="assets/Create new chat.png" alt="Picture with a plus sign" width="28px" height="28px">
+        </div>
+        <!--Pinned Chats section-->
+        <div class="pinned-chats">
+            <div class="section-title">
+                <img src="assets/tabler_pin-filled.png" alt="Pin" width="15px" height="15px">
+                <p>PINNED CHATS</p>
+            </div>
+            <!--Contacts-->
+            <div class="contact">
+                <div class="contact-image">
+                    <img src="Images/Liam-Benjamin.jpg" alt="A man's picture">
+                </div>
+                <div class="contact-content">
+                    <div class="name-time">
+                        <p class="name light">Liam Anderson</p>
+                        <p>04:50 PM</p>
+                    </div>
+                    <div class="contact-message">
+                        <p id="typing-text">Typing ...</p>
+                    </div>
+                </div>
+            </div>
+            <!--Contact with notifictaions-->
+            <div class="contact">
+                <div class="contact-image">
+                    <img src="Images/Lucas.jpg" alt="A man's picture">
+                </div>
+                <div class="contact-content">
+                    <div class="name-time">
+                        <p class="name grey">Lucas Williams</p>
+                        <p>10:30 AM</p>
+                    </div>
+                    <div class="contact-message notification">
+                        <p class="msg">Hey, how is it going?</p>
+                        <div class="circle">2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact grace-rectangle">
+                <div class="contact-image">
+                    <img src="Images/Grace.png" alt="A white woman's picture">
+                </div>
+                <div class="contact-content">
+                    <div class="name-time">
+                        <p class="name grace">Grace Miller</p>
+                        <p>10:25 AM</p>
+                    </div>
+                    <div class="contact-message notification">
+                        <p class="msg">Can't wait for the weekend!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--All messages section-->
+        <div class="all-messages">
+            <div class="section-title">
+                <img src="assets/icon-park-solid_message.png" alt="Message icon" width="15px" height="15px">
+                <p>ALL MESSAGES</p>
+            </div>
+            <!--ALL MESSAGES section's contacts-->
+            <div class="contact">
+                <div class="contact-image">
+                    <img src="Images/Sophia.jpg" alt="A black woman's picture">
+                </div>
+                <div class="contact-content">
+                    <div class="name-time">
+                        <p class="all-name">Sophia Chen</p>
+                        <p>07:23 PM</p>
+                    </div>
+                    <div class="contact-dm">
+                        <p class="msg">Remember the concert last y...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-image">
+                    <img src="Images/Liam-Benjamin.jpg" alt="A man's picture">
+                </div>
+                <div class="contact-content">
+                    <div class="name-time">
+                        <p class="name grey">Benjamin Knight</p>
+                        <p>08:45 PM</p>
+                    </div>
+                    <div class="contact-message notification">
+                        <p class="msg">Just got back from a hiking trip.</p>
+                        <div class="circle">1</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-image">
+                    <img src="Images/Olivia.jpg" alt="A white woman's picture">
+                </div>
+                <div class="contact-content">
+                    <div class="name-time">
+                        <p class="all-name">Olivia Foster</p>
+                        <p>Yesterday</p>
+                    </div>
+                    <div class="contact-dm">
+                        <p class="msg">Excited for upcoming vac...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Chat Container-->
+    <div class="chat-container">
+        <!--Chat Area-->
+        <div class="chat-area">
+            <div class="top-bar">
+                <div class="contact-info">
+                    <img src="Images/Grace.png" alt="">
+                </div>
+                <div class="chat-right-icons">
+                    <img src="assets/ri_phone-fill.png" alt="Phone icon">
+                    <img src="assets/majesticons_video.png" alt="Video-camera icon">
+                    <img src="assets/ri_more-2-fill.png" alt="More icon">
+                </div>
+            </div>
+            <div class="message-space">
+
+            </div>
+        </div>
+        <!--Message Input Area-->
+        <div class="message-input-area">
+            <div class="message-input">
+                <img src="assets/fluent_emoji-16-regular.png" alt="">
+                <form action="">
+                    <textarea rows="4" cols="100" placeholder="Type message ..."></textarea>
+                </form>
+            </div>
+            <div class="message-icons">
+                <img src="assets/icon-park-solid_voice.png" alt="Microphone icon">
+                <img src="assets/akar-icons_attach.png" alt="Paperclip icon">
+                <button><span>Send</span> <img id="envelop" src="assets/bxl_telegram.png" alt="Envelop icon"></button>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

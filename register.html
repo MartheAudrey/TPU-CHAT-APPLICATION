@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT APPLICATION - Register page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+    <section class="authentication">
+        <div class="left-content">
+            <img src="assets/mingcute_chat-4-fill.png" alt="The application logo">
+            <img src="assets/Chatties.png" alt="">
+        </div>
+       <div class="right-content">
+            <p id="welcome-text">Create an account</p>
+            <p>Please enter your details below</p>
+            <form id="register-form">
+                <label for="name">Username</label>
+                <input type="text" id="name" placeholder="Enter your username..." required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email..." required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter you password..." required>
+                <button type="submit">Create an account</button>
+            </form>
+            <p>Already an account? <a href="login.html" id="page">Login</a></p>
+        </div>
+    </section>
+    <script src="register.js"></script>
+</body>
+</html>

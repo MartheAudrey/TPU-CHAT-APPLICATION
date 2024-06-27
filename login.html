@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT APPLICATION - Login page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+    <section class="authentication">
+        <div class="left-content">
+            <img src="assets/mingcute_chat-4-fill.png" alt="The application logo">
+            <img src="assets/Chatties.png" alt="">
+        </div>
+       <div class="right-content">
+            <p id="welcome-text">Welcome back!</p>
+            <p>Please enter your details below</p>
+            <form id="login-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email..." required>
+                <label for="password">Password</label>
+                <div class="password-section">
+                    <input type="password" id="password" placeholder="Enter you password..." required>
+                    <img src="assets/eye-grey.png" alt="eye icon" id="togglePassword">
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" value="Remember me ?" id="remember">
+                    <label for="remember">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button id="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="register.html" id="page">Register</a></p>
+        </div>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>
